@@ -1,0 +1,191 @@
+<html>
+	<head>
+	
+		<title>Studio Stein</title>
+		
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		
+		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Nunito+Sans:200,300,400,600,700" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
+
+		<link rel="stylesheet" href="https://unpkg.com/cirrus-ui">
+		
+	</head>
+	
+	<body class="">
+
+		<div class="u-flex u-justify-space-between" style="width:100%;position:fixed;">
+			<div class="tab-container" style="flex-grow:1">
+				<ul class="bg-gray-100 m-0">
+					<li>
+						<div class="tab-item-content bg-gray-100">
+							<i class="material-icons">home</i>
+							<span class="u-none-xs"><span class="p-1"></span>Voltar</span>
+						</div>
+					</li>
+					<li>
+						<div class="tab-item-content bg-gray-100">
+							<i class="material-icons">undo</i>
+							<span class="u-none-xs"><span class="p-1"></span>Desfazer</span>
+						</div>
+					</li>
+					<li>
+						<div class="tab-item-content bg-gray-100">
+							<i class="material-icons">redo</i>
+							<span class="u-none-xs"><span class="p-1"></span>Refazer</span>
+						</div>
+					</li>
+				</ul>
+			</div>
+			<div class="tab-container tabs-right" style="flex-grow:1">
+				<ul class="bg-gray-100 m-0">
+					<li>
+						<div class="tab-item-content bg-gray-100">
+							<i class="material-icons">delete</i>
+							<span class="u-none-xs"><span class="p-1"></span>Deletar</span>
+						</div>
+					</li>
+					<li>
+						<div class="tab-item-content bg-gray-100">
+							<i class="material-icons">publish</i>
+							<span class="u-none-xs"><span class="p-1"></span>Exportar</span>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</div>
+		
+		<div style="height:50px;"></div>
+		
+		<div class="p-2 u-center" style="max-width: 500px;">
+			<div class="bg-gray-100">
+				<canvas id="myCanvas" width="1080" height="1080" class="u-shadow" style="max-width:100%;"></canvas>
+			</div>
+			
+			<div class="space large"></div>
+		
+		<!-- Main Menu -->
+		
+			<div id="elements">
+				<p class="text-gray-600 u-text-center">Escolha um elemento para editar</p>
+				<div id="elementsContainer" style="overflow:auto; white-space: nowrap;">
+					
+					<button class="u-circle p-2 m-2" onclick="gotoMenu(this)" data-id1="elements" data-id2="text-editor-1"><i class="material-icons">text_fields</i></button>
+					<button class="u-circle p-2 m-2" onclick="gotoMenu(this)" data-id1="elements" data-id2="img-editor-1"><i class="material-icons">image</i></button>
+					<button class="u-circle p-2 m-2" onclick="gotoMenu(this)" data-id1="elements" data-id2="img-editor-1"><i class="material-icons">image</i></button>
+					
+				</div>
+			</div>
+			
+		<!-- Text Editor -->
+			
+			<div id="text-editor-1" class="u-shadow u-round p-2" style="flex-grow:1;display:none">
+				
+				<div class="tile u-items-center">
+					<div class="title__icon">
+						<button class="btn-transparent u-circle m-0 p-2" onclick="gotoMenu(this)" data-id1="text-editor-1" data-id2="elements"><i class="material-icons">arrow_back</i></button>
+					</div>
+					<div class="tile__container">
+						<p class="tile__title m-0">Texto 1</p>
+					</div>
+				</div>
+				
+				<div style="overflow:auto; white-space: nowrap; text-align:center">
+					
+					<button class="u-circle p-2 m-2" onclick="gotoMenu(this)" data-id1="text-editor-1" data-id2="text-editor-1-text"><i class="material-icons">edit</i></button>
+					<button class="u-circle p-2 m-2" onclick="gotoMenu(this)" data-id1="text-editor-1" data-id2="text-editor-1-color"><i class="material-icons">palette</i></button>
+					<button class="u-circle p-2 m-2"><i class="material-icons">visibility</i></button>
+					
+				</div>
+				
+				<div class="tile u-items-center">
+					<div class="title__icon">
+						<button class="btn-transparent m-0 p-2 tile__title">12</button>
+					</div>
+					<div class="tile__container p-2">
+						<input type="range" id="size" name="size" class="p-0" min="15" max="100">
+					</div>
+				</div>
+				
+			</div>
+			
+			<div id="text-editor-1-text" class="u-shadow u-round p-2" style="flex-grow:1; display:none">
+				
+				<div class="tile u-items-center">
+					<div class="title__icon">
+						<button class="btn-transparent u-circle m-0 p-2" onclick="gotoMenu(this)" data-id1="text-editor-1-text" data-id2="text-editor-1"><i class="material-icons">arrow_back</i></button>
+					</div>
+					<div class="tile__container">
+						<p class="tile__title m-0">Editar Texto</p>
+					</div>
+				</div>
+				
+				<textarea style="resize: none;">Hello World</textarea>
+				
+			</div>
+			
+			<div id="text-editor-1-color" class="u-shadow u-round p-2" style="flex-grow:1; display:none">
+				
+				<div class="tile u-items-center">
+					<div class="title__icon">
+						<button class="btn-transparent u-circle m-0 p-2" onclick="gotoMenu(this)" data-id1="text-editor-1-color" data-id2="text-editor-1"><i class="material-icons">arrow_back</i></button>
+					</div>
+					<div class="tile__container">
+						<p class="tile__title m-0">Editar Cor</p>
+					</div>
+				</div>
+				
+				<div style="overflow:auto; white-space: nowrap; text-align:center">
+					
+					<button class="u-circle p-2 m-2" style="color:#ffcc00"><i class="material-icons">stop_circle</i></button>
+					<button class="u-circle p-2 m-2" style="color:#00ff59"><i class="material-icons">stop_circle</i></button>
+					<button class="u-circle p-2 m-2" style="color:#001eff"><i class="material-icons">stop_circle</i></button>
+					
+				</div>
+				
+			</div>
+			
+		<!-- Image Editor -->
+		
+			<div id="img-editor-1" class="u-shadow u-round p-2" style="flex-grow:1;display:none">
+				
+				<div class="tile u-items-center">
+					<div class="title__icon">
+						<button class="btn-transparent u-circle m-0 p-2" onclick="gotoMenu(this)" data-id1="img-editor-1" data-id2="elements"><i class="material-icons">arrow_back</i></button>
+					</div>
+					<div class="tile__container">
+						<p class="tile__title m-0">Imagem 1</p>
+					</div>
+				</div>
+				
+				<div style="overflow:auto; white-space: nowrap; text-align:center">
+					
+					<button class="u-circle p-2 m-2"><i class="material-icons">perm_media</i></button>
+					
+				</div>
+				
+				<div class="tile u-items-center">
+					<div class="title__icon">
+						<button class="btn-transparent m-0 p-2"><i class="material-icons">opacity</i></button>
+					</div>
+					<div class="tile__container p-2">
+						<input type="range" id="opacity" name="opacity" class="p-0" min="0" max="100" value="100">
+					</div>
+				</div>
+				
+			</div>
+			
+		</div>
+		
+		<script>
+		
+			function gotoMenu(id) {
+				document.getElementById(id.dataset.id1).style.display="none";
+				document.getElementById(id.dataset.id2).style.display="block";
+			}
+		</script>
+
+	</body>
+	
+</html>
