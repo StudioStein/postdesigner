@@ -1,7 +1,19 @@
+<?php
+
+session_start();
+
+include "functions.php";
+
+check_log();
+
+?>
+
 <html>
 	<head>
 	
-		<title>Studio Stein</title>
+		<title>Post Designer - Studio Stein</title>
+		
+		<link rel="shortcut icon" href="favicon.png" />
 		
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		
@@ -11,6 +23,24 @@
 
 		<link rel="stylesheet" href="https://unpkg.com/cirrus-ui">
 		<script src="https://unpkg.com/canvas-txt"></script>
+		
+		
+		<script>
+			template = JSON.parse(<?php 
+			
+			$obj = file_read("templates.json");
+			$obj2 = $obj->{$_SESSION["login-postdesigner"]["id"]}->templates[$_GET["id"]]->arte;
+			echo "'".json_encode($obj2)."'"; 
+			
+			?>);
+	 
+			userColors = [<?php
+			
+			$obj3 = $obj->{$_SESSION["login-postdesigner"]["id"]}->cores;
+			echo '"'.implode('","', $obj3).'"';
+			
+			?>];
+		</script>
 		
 		<script src="editor.js"></script>
 		
@@ -50,7 +80,7 @@
 			<div class="tab-container" style="flex-grow:1">
 				<ul class="bg-gray-100 m-0">
 					<li>
-						<div class="tab-item-content bg-gray-100">
+						<div class="tab-item-content bg-gray-100" onclick="window.location='dashboard.php'">
 							<i class="material-icons">home</i>
 							<span class="u-none-xs"><span class="p-1"></span>Voltar</span>
 						</div>
@@ -80,9 +110,9 @@
 		
 		<!-- Main Menu -->
 		
-			<div id="elements">
+			<div id="elements" style="width:100%">
 				<p class="text-gray-600 u-text-center">Escolha um elemento para editar</p>
-				<div id="elementsContainer" style="overflow:auto; white-space: nowrap;">
+				<div id="elementsContainer" style="overflow:auto; white-space: nowrap;text-align:center">
 					
 					
 					
@@ -94,7 +124,7 @@
 			</div>
 			
 			<div id="content" style="overflow: hidden;  width: 0;  height: 0;">
-				<img id="placeholder" src="https://i.imgur.com/WqvisYE.png" crossOrigin="Anonymous" onload="loadedContent[0]=true">
+				<img id="placeholder" src="imgs/placeholder.png" crossOrigin="Anonymous" onload="loadedContent[0]=true">
 			</div>
 			
 		</div>
@@ -120,7 +150,7 @@
 		
 		<div class="p-2 u-center" style="max-width: 500px;">
 			<div class="bg-gray-100">
-				<img id="imageSave" src="https://i.imgur.com/WqvisYE.png" width="1080" height="1080" class="u-shadow" style="max-width:100%; animation: fadein .5s;">
+				<img id="imageSave" src="imgs/placeholder.png" width="1080" height="1080" class="u-shadow" style="max-width:100%; animation: fadein .5s;">
 			</div>
 			
 			<div class="space large"></div>

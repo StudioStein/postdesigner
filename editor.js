@@ -1,12 +1,7 @@
 function start() {
-
-	 template = JSON.parse('[  {    "type": "img",    "url": "https://i.imgur.com/dNBKRze.png",    "opacity": "1",    "blend": "source-over"  },  {    "type": "img-upload",    "x": 0,    "y": 198,    "w": 420,    "h": 684,    "opacity": "1",    "blend": "source-over"  },  {    "type": "img-upload",    "x": 420,    "y": 0,    "w": 660,    "h": 1080,    "opacity": "1",    "blend": "source-over"  },  {    "type": "img",    "url": "https://i.imgur.com/srbjcxb.png",    "opacity": "1",    "blend": "source-over"  },  {    "type": "img",    "url": "https://i.imgur.com/osJDTzg.png",    "opacity": "1",    "blend": "source-over"  },  {    "type": "txt",    "text":"Hello World",    "fontUrl": "https://fonts.googleapis.com/css2?family=Big+Shoulders+Stencil+Text:wght@300&display=swap",    "fontName":"Big Shoulders Stencil Text",    "fontSize":35,    "fontAlign":"center",    "lineHeight":40,    "fontColor": "#ffffff",    "x":50,    "y":120,    "w":400,    "h":200,    "opacity": "1",    "blend": "source-over"  }]');
-	 
-   userColors = ["#4287f5","#dedede","#000000"];
+ 
    colors = "";
-	
-	
-  
+
    canvasTxt = window.canvasTxt.default;
   
    content = document.getElementById('content');

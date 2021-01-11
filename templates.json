@@ -1,0 +1,372 @@
+{
+	"moschetta": {
+		"cores": [
+			"#000000",
+			"#FF0046"
+		],
+		"templates": [
+			{
+				"nome": "Antes e Depois",
+				"cover": "imgs/cover-moschetta-1.png",
+				"arte": [
+					{
+						"type": "img",
+						"url": "imgs/img-moschetta-1.png",
+						"opacity": "1",
+						"blend": "source-over"
+					},
+					{
+						"type": "img-upload",
+						"x": 0,
+						"y": 198,
+						"w": 420,
+						"h": 684,
+						"opacity": "1",
+						"blend": "source-over"
+					},
+					{
+						"type": "img-upload",
+						"x": 420,
+						"y": 0,
+						"w": 660,
+						"h": 1080,
+						"opacity": "1",
+						"blend": "source-over"
+					},
+					{
+						"type": "img",
+						"url": "imgs/img-moschetta-2.png",
+						"opacity": "1",
+						"blend": "source-over"
+					},
+					{
+						"type": "img",
+						"url": "imgs/img-moschetta-3.png",
+						"opacity": "1",
+						"blend": "source-over"
+					}
+				]
+			},
+			{
+				"nome": "1 Foto",
+				"cover": "imgs/cover-moschetta-2.png",
+				"arte": [
+					{
+						"type": "img",
+						"url": "imgs/img-moschetta-1.png",
+						"opacity": "1",
+						"blend": "source-over"
+					},
+					{
+						"type": "img-upload",
+						"x": 0,
+						"y": 0,
+						"w": 1080,
+						"h": 1080,
+						"opacity": "1",
+						"blend": "source-over"
+					},
+					{
+						"type": "img",
+						"url": "imgs/img-moschetta-2.png",
+						"opacity": "1",
+						"blend": "source-over"
+					}
+				]
+			},
+			{
+				"nome": "2 Fotos",
+				"cover": "imgs/cover-moschetta-3.png",
+				"arte": [
+					{
+						"type": "img",
+						"url": "imgs/img-moschetta-1.png",
+						"opacity": "1",
+						"blend": "source-over"
+					},
+					{
+						"type": "img-upload",
+						"x": 0,
+						"y": 0,
+						"w": 540,
+						"h": 1080,
+						"opacity": "1",
+						"blend": "source-over"
+					},
+					{
+						"type": "img-upload",
+						"x": 540,
+						"y": 0,
+						"w": 540,
+						"h": 1080,
+						"opacity": "1",
+						"blend": "source-over"
+					},
+					{
+						"type": "img",
+						"url": "imgs/img-moschetta-2.png",
+						"opacity": "1",
+						"blend": "source-over"
+					}
+				]
+			},
+			{
+				"nome": "3 Fotos",
+				"cover": "imgs/cover-moschetta-4.png",
+				"arte": [
+					{
+						"type": "img",
+						"url": "imgs/img-moschetta-1.png",
+						"opacity": "1",
+						"blend": "source-over"
+					},
+					{
+						"type": "img-upload",
+						"x": 0,
+						"y": 0,
+						"w": 540,
+						"h": 540,
+						"opacity": "1",
+						"blend": "source-over"
+					},
+					{
+						"type": "img-upload",
+						"x": 0,
+						"y": 540,
+						"w": 540,
+						"h": 540,
+						"opacity": "1",
+						"blend": "source-over"
+					},
+					{
+						"type": "img-upload",
+						"x": 540,
+						"y": 0,
+						"w": 540,
+						"h": 1080,
+						"opacity": "1",
+						"blend": "source-over"
+					},
+					{
+						"type": "img",
+						"url": "imgs/img-moschetta-2.png",
+						"opacity": "1",
+						"blend": "source-over"
+					}
+				]
+			},
+			{
+				"nome": "Avisos",
+				"cover": "imgs/cover-moschetta-5.png",
+				"arte": [
+					{
+						"type": "img",
+						"url": "imgs/img-moschetta-4.png",
+						"opacity": "1",
+						"blend": "source-over"
+					},
+					{
+						"type": "txt",
+						"text": "Hello World",
+						"fontUrl": "https://fonts.googleapis.com/css2?family=Montserrat&display=swap",
+						"fontName": "Montserrat",
+						"fontSize": 35,
+						"fontAlign": "center",
+						"fontColor": "#000000",
+						"x": 140,
+						"y": 0,
+						"w": 800,
+						"h": 1080,
+						"opacity": "1",
+						"blend": "source-over"
+					}
+				]
+			}
+		]
+	},
+	"studiostein": {
+		"cores": [
+			"#000000",
+			"#FF0046"
+		],
+		"templates": [
+			{
+				"nome": "Antes e Depois",
+				"cover": "imgs/cover-moschetta-1.png",
+				"arte": [
+					{
+						"type": "img",
+						"url": "imgs/img-moschetta-1.png",
+						"opacity": "1",
+						"blend": "source-over"
+					},
+					{
+						"type": "img-upload",
+						"x": 0,
+						"y": 198,
+						"w": 420,
+						"h": 684,
+						"opacity": "1",
+						"blend": "source-over"
+					},
+					{
+						"type": "img-upload",
+						"x": 420,
+						"y": 0,
+						"w": 660,
+						"h": 1080,
+						"opacity": "1",
+						"blend": "source-over"
+					},
+					{
+						"type": "img",
+						"url": "imgs/img-moschetta-2.png",
+						"opacity": "1",
+						"blend": "source-over"
+					},
+					{
+						"type": "img",
+						"url": "imgs/img-moschetta-3.png",
+						"opacity": "1",
+						"blend": "source-over"
+					}
+				]
+			},
+			{
+				"nome": "1 Foto",
+				"cover": "imgs/cover-moschetta-2.png",
+				"arte": [
+					{
+						"type": "img",
+						"url": "imgs/img-moschetta-1.png",
+						"opacity": "1",
+						"blend": "source-over"
+					},
+					{
+						"type": "img-upload",
+						"x": 0,
+						"y": 0,
+						"w": 1080,
+						"h": 1080,
+						"opacity": "1",
+						"blend": "source-over"
+					},
+					{
+						"type": "img",
+						"url": "imgs/img-moschetta-2.png",
+						"opacity": "1",
+						"blend": "source-over"
+					}
+				]
+			},
+			{
+				"nome": "2 Fotos",
+				"cover": "imgs/cover-moschetta-3.png",
+				"arte": [
+					{
+						"type": "img",
+						"url": "imgs/img-moschetta-1.png",
+						"opacity": "1",
+						"blend": "source-over"
+					},
+					{
+						"type": "img-upload",
+						"x": 0,
+						"y": 0,
+						"w": 540,
+						"h": 1080,
+						"opacity": "1",
+						"blend": "source-over"
+					},
+					{
+						"type": "img-upload",
+						"x": 540,
+						"y": 0,
+						"w": 540,
+						"h": 1080,
+						"opacity": "1",
+						"blend": "source-over"
+					},
+					{
+						"type": "img",
+						"url": "imgs/img-moschetta-2.png",
+						"opacity": "1",
+						"blend": "source-over"
+					}
+				]
+			},
+			{
+				"nome": "3 Fotos",
+				"cover": "imgs/cover-moschetta-4.png",
+				"arte": [
+					{
+						"type": "img",
+						"url": "imgs/img-moschetta-1.png",
+						"opacity": "1",
+						"blend": "source-over"
+					},
+					{
+						"type": "img-upload",
+						"x": 0,
+						"y": 0,
+						"w": 540,
+						"h": 540,
+						"opacity": "1",
+						"blend": "source-over"
+					},
+					{
+						"type": "img-upload",
+						"x": 0,
+						"y": 540,
+						"w": 540,
+						"h": 540,
+						"opacity": "1",
+						"blend": "source-over"
+					},
+					{
+						"type": "img-upload",
+						"x": 540,
+						"y": 0,
+						"w": 540,
+						"h": 1080,
+						"opacity": "1",
+						"blend": "source-over"
+					},
+					{
+						"type": "img",
+						"url": "imgs/img-moschetta-2.png",
+						"opacity": "1",
+						"blend": "source-over"
+					}
+				]
+			},
+			{
+				"nome": "Avisos",
+				"cover": "imgs/cover-moschetta-5.png",
+				"arte": [
+					{
+						"type": "img",
+						"url": "imgs/img-moschetta-4.png",
+						"opacity": "1",
+						"blend": "source-over"
+					},
+					{
+						"type": "txt",
+						"text": "Hello World",
+						"fontUrl": "https://fonts.googleapis.com/css2?family=Montserrat&display=swap",
+						"fontName": "Montserrat",
+						"fontSize": 35,
+						"fontAlign": "center",
+						"fontColor": "#000000",
+						"x": 140,
+						"y": 0,
+						"w": 800,
+						"h": 1080,
+						"opacity": "1",
+						"blend": "source-over"
+					}
+				]
+			}
+		]
+	}
+}
